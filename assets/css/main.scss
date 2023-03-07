@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+// @import url('../fonts/THICCCBOI-Regular.woff2');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #0D0C0F;
+
+}
+
+:root {
+    --swatch_ca76be6e: hsla(0, 91.51%, 58.43%, 1);
+    --swatch_198077ac: hsla(230, 7.32%, 16.08%, 1);
+    --swatch_7cfbe466: hsla(234, 8.06%, 24.31%, 1);
+    --swatch_d94963dc: hsla(260, 11.11%, 5.29%, 1);
+    --swatch_764e99f2: hsla(230, 9.09%, 12.94%, 1);
+    --swatch_48604c15: hsla(250, 2.97%, 39.61%, 1);
+    --swatch_f1625bf3: hsla(230, 4.48%, 73.73%, 1);
+    --swatch_7f55419f: hsla(240, 7.25%, 86.47%, 1);
+    --swatch_fdda315a: hsla(270, 9.52%, 91.76%, 1);
+    --swatch_d4d76636: hsla(252, 45.45%, 97.84%, 1);
+    --swatch_bdfdaccd: hsla(240, 0%, 100%, 1);
+    --swatch_03cd6dd8: rgba(0, 0, 0, 0.9);
+    --swatch_006e0c47: rgba(0, 0, 0, 0.45);
+}
+
+.karimov__fadeIn{
+    opacity: 0;
+    transition: all 2s;
+}
+.karimov__fadeIn__css{
+    opacity: 1;
+}
+
+.progress_container {
+    position: fixed;
+    top: 98px;
+    left: 0;
+    line-height: 10px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    z-index: 9999999;
+}
+.progress_bar {
+    overflow: visible;
+    height: 2px;
+    background: #F63434;
+    width: 0%;
+}
+
+.container{
+    width: 100%;
+    background-color: #0D0C0F;
+    
+    .sections{
+        max-width: 1366px;
+        margin: auto;
+    }
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transition: all 1s;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+::-webkit-scrollbar{
+    width: 10px;
+    background-color: #2b2b2b;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #404040;
+    border-radius: 5px;
+    // box-shadow: 0 0 20px 0px rgba(255, 255, 255, 0.459);
+    // box-shadow: 2px 2px 10px #fff;
+}
+.line-blink {
+    animation: blinky 0.7s  infinite;
+    background-color: #fff;
+    padding: 0 1px;
+    margin: 0 10px;
+}
+
+
+
+@import "./header";
+@import "./section_1";
+@import "./section_2";
+@import "./section_3";
+@import "./section_4";
+@import "./section_5";
+@import "./section_6";
+@import "./footer";
